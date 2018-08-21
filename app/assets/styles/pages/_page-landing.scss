@@ -1,0 +1,101 @@
+/* ==========================================================================
+   Page: Home
+   ========================================================================== */
+
+.page--landing {
+  .page {
+    &__header--landing {
+      @extend .antialiased;
+      text-align: center;
+      background-color: shade($primary-color, 48%);
+      background-image: url(../graphics/layout/hero-bg.png);
+      background-size: cover;
+      position: relative;
+      padding: 10rem 0;
+    }
+
+    &__headline--landing {
+      position: relative;
+      z-index: 10;
+      color: #fff;
+    }
+
+    &__title--landing {
+      position: relative;
+      margin-bottom: 2rem;
+
+      img {
+        width: auto;
+        height: 4rem;
+      }
+
+      span {
+        @extend .visually-hidden;
+      }
+
+      strong {
+        position: absolute;
+        top: -0.75rem;
+        left: 50%;
+        display: inline-block;
+        text-transform: uppercase;
+        padding: 0 0.75rem;
+        background: $primary-color;
+        border-radius: $base-border-radius;
+        transform: translate(-50%, -100%);
+        font-size: 1.5rem;
+      }
+
+
+    }
+
+    &__description--landing {
+      width: 100%;
+      padding: 0 $global-spacing;
+      margin: 0 auto;
+      font-weight: $base-font-bold;
+      font-size: 1.5rem;
+      max-width: 48rem;
+    }
+
+    &__body--landing {
+      text-align: center;
+      padding: 3rem 0;
+
+      h2 {
+        font-weight: $base-font-light;
+        color: tint($base-color, 48%);
+        font-size: 2rem;
+
+        &:before {
+          content: "";
+          background: url(../graphics/layout/map_icon.png);
+          background-size: 100%;
+          display: block;
+          margin: 0 auto 1rem auto;
+          z-index: 1;
+          width: 5rem;
+          height: 5rem;
+        }
+      }
+
+      .description {
+        width: 100%;
+        max-width: 40rem;
+        margin: 0 auto 2rem auto;
+      }
+    }
+  }
+}
+
+.cta-block {
+  small {
+    font-size: inherit;
+    font-weight: inherit;
+    margin: 0 ($global-spacing / 2);
+  }
+
+  .button {
+    min-width: 12rem;
+  }
+}
