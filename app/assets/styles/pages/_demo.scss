@@ -5,9 +5,7 @@ table {
 }
 
 .react-bs-table {
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    margin: 5px 10px;
+    border: 1px solid #1f1e1e;
 }
 
 thead {
@@ -20,16 +18,17 @@ thead {
 }
 
 .react-bs-table .table-bordered>thead>tr>td, .react-bs-table .table-bordered>thead>tr>th {
-    border-bottom-width: 2px;
+    height: 50px;
+    border-bottom: 1px solid black;
 }
 .react-bs-table-container {
     display: block;
     font-family: "Open Sans", Arial, sans-serif;
-    line-height: 1.6;
-    font-size: 16px;
-    background: #fff;
-    color: #848484;
-    font-weight: 300;
+    // line-height: 1.6;
+    // font-size: 16px;
+    // background: #fff;
+    // color: #848484;
+    // font-weight: 300;
     overflow-x: hidden;
 }
 .react-bs-container-header {
@@ -46,25 +45,87 @@ thead {
     table-layout: fixed;
 }
 .content {
-    background-color: #ffffff;
-    border: 1px solid #d0d0d0;
+    display: flex;
     margin: 40px 17px 17px 17px;
     margin-right: 20px;
+   
 }
-.caret {
-    display: inline-block;
-    width: 0;
-    height: 0;
-    margin-left: 2px;
-    vertical-align: middle;
-    border-top: 4px dashed;
-    border-top: 4px solid \9;
-    border-right: 4px solid transparent;
-    border-left: 4px solid transparent;
+
+.content-left {
+    flex: 2.7;
+    margin-right: 10px;
 }
-.dropup .caret {
-    border-top: 0;
-    border-bottom: 4px dashed;
-    border-bottom: 4px solid \9;
-    content: "";
+
+.content-right {
+    flex: 1;
+    background-color: #ffffff;
+    border: 1px solid #1f1e1e;
+    height: 750px;
+    overflow: auto;
+
+
+}
+.detail {
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid #1f1e1e;
+    font-size: 130%;
+}
+.title {
+    padding: 5px;
+    background-color: beige;
+    font-weight: 460;
+}
+.inner {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.inner-left {
+    flex: 1
+}
+.inner-right {
+    float: right;
+    text-align: right;
+}
+.header {
+    display: flex;
+    height: 80px;
+    background-color: #ffffff;
+}
+.left-header {
+    display: flex;
+    flex: 1;
+    padding-top: 30px;
+    padding-left: 20px;
+}
+.total_assets {
+    margin-left: 6%;
+}
+.sync_data {
+    border: 1px solid red;
+    margin-bottom: 15px;
+    /* padding: 1%; */
+    margin-top: 15px;
+    /* margin: 1%; */
+    margin-right: 20px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 13px;
+    background: red;
+    color: white;
+    display: flex;
+    cursor: pointer;
+}
+
+.sync_icon {
+    border-style: none;
+    margin: auto;
+    margin-right: 8px;
+    padding-bottom: 13px;
+    width: 35px;
+    height: 35px;
+    color: #fff;
 }
