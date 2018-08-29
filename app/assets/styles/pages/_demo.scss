@@ -62,8 +62,7 @@ thead {
     border: 1px solid #1f1e1e;
     height: 750px;
     overflow: auto;
-
-
+    
 }
 .detail {
     font-weight: bold;
@@ -87,8 +86,8 @@ thead {
     flex: 1
 }
 .inner-right {
-    float: right;
     text-align: right;
+    flex: 1;
 }
 .header {
     display: flex;
