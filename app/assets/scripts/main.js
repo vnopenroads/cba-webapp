@@ -19,6 +19,7 @@ import AssetsDetail from './views/assets-detail';
 import Upload from './views/upload';
 import Faq from './views/faq';
 import Demo from './views/demo';
+import Configurations from './views/configurations/index'
 
 
 const validateLanguage = ({ params: { lang } }, replace) => {
@@ -39,6 +40,7 @@ render((
         <Route path='explore' component={Explore} pageClass='explore' />
         <Route path='faq' component={Faq} pageClass='faq' />
         <Route path='demo' component={Demo} pageClass='demo' />
+        <Route path='configurations' component={Configurations} pageClass='configurations' />
         <Route path='assets' component={Assets}>
           <IndexRoute component={AssetsIndex} pageClass='assets' />
           <Route path='road/:vpromm' component={AssetsDetail} pageClass='assets-inner-canvas' />

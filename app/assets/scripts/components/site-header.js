@@ -111,7 +111,7 @@ const SiteHeader = ({language, pathname}) => (
           </li>
           <li>
             <Link
-              to={`/${language}/a`}
+              to={`/${language}/configurations`}
               className='site__menu-global-item'
               activeClassName='site__menu-global-item--active'>
               <T>Configurations</T>
