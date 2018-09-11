@@ -4,33 +4,35 @@
 .content-con-left {
     flex: 1;
     margin-right: 20px;
-    background-color: #ffff;
+    margin-left: 20px;
     margin-top: 1.3%;
     height: 20%;
-    border-bottom: 1px solid black;
 }
 .content-con-right {
-    flex: 4;
+    flex: 5;
+    margin-right: 20px;
 }
 .title-con {
-    border-top: 1px solid black;
-    border-left: 1px solid black;
-    border-right: 1px solid black;
+    border-bottom: 1px solid #bdb9b9;
     padding: 15px;
-    cursor: pointer;
-}
-.content-con-left {
-    margin-right: 20px;
+    text-align: center;
+    font-weight: bold;
     background-color: #ffff;
 }
-
-.title-con:hover {
-    background-color: rgb(245, 136, 136)
+.menu-con {
+    border: 1px solid #bdb9b9;
+    margin-bottom: 15px;
 }
+.nav-con {
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(211, 208, 204)
+}
+
+
 .table-RW {
-    height: 700px;
+    height: 742px;
     overflow: auto;
-    overflow-x: scroll;
 }
 .road-work {
     width: 100%;
@@ -47,6 +49,21 @@
     border-left: 1px solid black;
     border-right: 1px solid black;
     padding: 15px;
+    background-color: rgb(245, 136, 136);
+    cursor: pointer;
+}
+
+.nav-con-default {
+    padding: 5px;
+}
+
+.nav-con-active {
+    background-color: rgb(245, 136, 136);
+    cursor: pointer;
+    padding: 5px;
+}
+
+.nav-con-default:hover {
     background-color: rgb(245, 136, 136);
     cursor: pointer;
 }

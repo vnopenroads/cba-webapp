@@ -4,12 +4,16 @@ import { BootstrapTable, TableHeaderColumn } from 'react-bootstrap-table';
 export default class RoadWork extends React.Component {
     render() {
         let dataRW = this.props.datas['RW']
+        let cellEditProp = {
+            mode: 'click'
+          };
+      
         return (
             <div className = 'road-work'>
             <div style = {{ fontWeight: 'bold', marginTop:'10px', marginBottom: '10px'}}> Road Works (RoadWorks) </div>
                 
                 <div className = 'table-RW'>
-                <BootstrapTable data={ dataRW } width = '1950' scrollTop={ 'Bottom' }>
+                <BootstrapTable data={ dataRW } cellEdit={ cellEditProp }>
                 <TableHeaderColumn row='0' colSpan='4'>Road Work </TableHeaderColumn>
                 <TableHeaderColumn row='0' colSpan='3'>Road Work Unit Cost</TableHeaderColumn>
                 <TableHeaderColumn row='0' colSpan='4'>After Road Works Condition</TableHeaderColumn>

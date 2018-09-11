@@ -1,17 +1,20 @@
 import React from 'react';
 import { BootstrapTable, TableHeaderColumn } from 'react-bootstrap-table';
 
-export default class VehicleFleet extends React.Component {
+export default class Annual extends React.Component {
     render() {
         let dataAnnual = this.props.datas['annual-traffic']
-        let dataVehicle = this.props.datas['vehicle-fleet']
+        let cellEditProp = {
+            mode: 'click'
+          };
+      
         return (
             <div>
                 <div>
-                <div style = {{ fontWeight: 'bold', marginTop:'10px', marginBottom: '10px'}}>
+                <div style = {{ fontWeight: 'bold', marginTop:'30px', marginBottom: '10px'}}>
                 Annual Traffic Growth Rate Scenarios (AnnualGrowth)
                 </div>
-                <BootstrapTable data={ dataAnnual }>
+                <BootstrapTable data={ dataAnnual } cellEdit={ cellEditProp }>
                 <TableHeaderColumn row='0' rowSpan='2' dataField='growth-scenario' isKey>Traffic Annual Growth Scenario</TableHeaderColumn>
                 <TableHeaderColumn row='0' colSpan='11'>Annual Traffic Growth Rate (%/year)</TableHeaderColumn>
                 <TableHeaderColumn row='1' dataField='motor-cycle'>Motor Cycle (veh/day)</TableHeaderColumn>
@@ -27,18 +30,6 @@ export default class VehicleFleet extends React.Component {
                 <TableHeaderColumn row='1' dataField='large-bus'>Large Bus (veh/day)</TableHeaderColumn>
                 </BootstrapTable>
                 </div>
-                <div>
-                <div style = {{ fontWeight: 'bold', marginTop:'10px', marginBottom: '10px'}}>
-                Vehicle Fleet Characteristics (VehicleFleet)
-                </div>
-                <BootstrapTable data={ dataVehicle } >
-                    <TableHeaderColumn dataField='vehicle-type' isKey>Vehicle Type</TableHeaderColumn>
-                    <TableHeaderColumn dataField='number'>Equivalent Standard Axles (ESA/vehicle)</TableHeaderColumn>
-                    <TableHeaderColumn dataField='esa'>Number of Passengers (#)</TableHeaderColumn>
-                    <TableHeaderColumn dataField='PTC'>Passengers Time Cost ($/hour per Passenger)</TableHeaderColumn>   
-                </BootstrapTable>
-                </div>
-
             </div>
         )
     }
