@@ -97,9 +97,9 @@
   .button-language,
   .site__menu-global-item {
     @extend .button, .button--achromic-plain;
-    padding: 20px;
+    padding: 10px 20px;
     margin-right: 20px;
-    font-size: 20px;
+    font-size: 14px;
     
   
     &--active {

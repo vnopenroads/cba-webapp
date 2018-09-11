@@ -17,7 +17,7 @@ export default class Prioritization extends React.Component {
                         Last run on: 23 Aug 2018 00:55
                     </div>
                     <div className = 'sync_data_pzi'> 
-                    <span>Sync Data from ORMA</span> 
+                    <span>Get Optimized Program</span> 
                     </div>
                 </div>
                 <div style = {{marginRight: '20px', marginLeft: '20px'}}>
