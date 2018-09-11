@@ -65,6 +65,7 @@ thead {
     border: 1px solid #1f1e1e;
     height: 750px;
     overflow: auto;
+    font-size: 14px;
 }
 .detail {
     font-weight: bold;
@@ -94,7 +95,7 @@ thead {
 .header {
     display: flex;
     height: 80px;
-    background-color: #ffffff;
+    background-color: #c0bdbd;;
 }
 .left-header {
     display: flex;
@@ -129,4 +130,10 @@ thead {
     width: 35px;
     height: 35px;
     color: #fff;
+}
+.last_synced {
+    font-weight: bold;
+}
+.total_assets {
+    font-weight: bold;
 }
