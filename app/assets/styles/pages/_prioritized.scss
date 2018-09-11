@@ -1,0 +1,56 @@
+.header_pzi {
+    display: flex;
+    height: 80px;
+    background-color: #c0bdbd;
+    margin-bottom: 40px;
+}
+
+.left_header_pzi {
+    display: flex;
+    flex: 1;
+    padding-top: 15px;
+    padding-left: 20px;
+}
+
+.sync_data_pzi {
+    border: 1px solid red;
+    margin-bottom: 15px;
+    /* padding: 1%; */
+    margin-top: 15px;
+    /* margin: 1%; */
+    margin-right: 20px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 13px;
+    background: red;
+    color: white;
+    display: flex;
+    cursor: pointer;
+}
+
+.title_pzi_active {
+    font-weight: bold;
+    margin-right: 12px;
+    background-color:#e5e3e3;
+    border-radius: 2px 2px 0px 0px;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.title_pzi {
+    font-weight: bold;
+    margin-right: 12px;
+    border-radius: 2px 2px 0px 0px;
+    padding: 20px;
+    // cursor: pointer;
+}
+
+// .title_pzi:hover {
+//     background-color:#e5e3e3;
+// }
+
+.last_run {
+    font-weight: bold;
+    margin-right: 4%;
+    margin-top: 2%;
+}

@@ -33,6 +33,7 @@
     margin: auto;
     margin-left: 1%;
     font-weight: bold;
+    font-size: 20px;
   }
   
   .site__headline {
@@ -61,7 +62,7 @@
   
     img {
       width: auto;
-      height: 1.25rem;
+      height: 2.25rem;
       vertical-align: top;
     }
   
@@ -96,6 +97,10 @@
   .button-language,
   .site__menu-global-item {
     @extend .button, .button--achromic-plain;
+    padding: 20px;
+    margin-right: 20px;
+    font-size: 20px;
+    
   
     &--active {
       @extend .button--active;

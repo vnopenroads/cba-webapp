@@ -23,7 +23,7 @@ const SiteHeader = ({language, pathname}) => (
       <div className='site__headline'>
         <h1 className='site__logo'>
           <Link to={`/${language}`}>
-            <img src='assets/graphics/layout/openroads-vn-logo-hor-neg.svg' width='736' height='96' alt='OpenRoads Vietnam logo' /><span>OpenRoads</span> 
+            <img src='assets/graphics/layout/openroads-vn-logo-hor-neg.svg' width='736' height='106' alt='OpenRoads Vietnam logo' /><span>OpenRoads</span> 
           </Link>
         </h1>
       </div>
@@ -119,7 +119,7 @@ const SiteHeader = ({language, pathname}) => (
           </li>
           <li>
             <Link
-              to={`/${language}/b`}
+              to={`/${language}/prioritized`}
               className='site__menu-global-item'
               activeClassName='site__menu-global-item--active'>
               <T>Road Work Prioritization</T>
