@@ -40,64 +40,64 @@ export default class Prioritization extends React.Component {
                     </div>
                 </div>
                 <div className = 'table-pzi'>
-                <BootstrapTable data={ this.state.data }  scrollTop={ 'Top' } >
-                    <TableHeaderColumn width='150' dataField='road_section_id' isKey>Road Section Id</TableHeaderColumn>
-                    <TableHeaderColumn width='150' dataField='road_number'>Road Number</TableHeaderColumn>
-                    <TableHeaderColumn width='150' dataField='road_name'>Road Name</TableHeaderColumn>
-                    {/* <TableHeaderColumn width='150' dataField='road_start'>Road Start</TableHeaderColumn>
-                    <TableHeaderColumn width='150' dataField='road_end'>Road End</TableHeaderColumn>
-                    <TableHeaderColumn width='150' dataField='section_order'>Section Order</TableHeaderColumn>
-                    <TableHeaderColumn width='150' dataField='section_name'>Section Name</TableHeaderColumn>
-                    <TableHeaderColumn width='150' dataField='province'>Province</TableHeaderColumn> */}
-                    <TableHeaderColumn width='150' dataField='district'>District</TableHeaderColumn>
-                    {/* <TableHeaderColumn width='150' dataField='commune'>Commune</TableHeaderColumn>
-                    <TableHeaderColumn width='150' dataField='management'>Management</TableHeaderColumn>
-                    <TableHeaderColumn width='150' dataField='start_km'>start (km)</TableHeaderColumn>
-                    <TableHeaderColumn width='150' dataField='end_km'>end (km)</TableHeaderColumn> */}
-                    <TableHeaderColumn width='150' dataField='length'>Length</TableHeaderColumn>
-                    {/* <TableHeaderColumn width='150' dataField='terrain_type'>Terrain Type</TableHeaderColumn>
-                    <TableHeaderColumn width='150' dataField='temparature'>Temparature</TableHeaderColumn>
-                    <TableHeaderColumn width='150' dataField='moisture'>Moisture </TableHeaderColumn>
-                    <TableHeaderColumn width='150' dataField='traffic_growth'>Traffic Growth</TableHeaderColumn> */}
-                    <TableHeaderColumn width='150' dataField='work_class'>Work Class</TableHeaderColumn>
-                    <TableHeaderColumn width='150' dataField='work_type'>Work Type</TableHeaderColumn>
-                    {/* <TableHeaderColumn width='150' dataField='work_name'>Work Name</TableHeaderColumn> */}
-                    <TableHeaderColumn width='150' dataField='work_cost'>Work Cost</TableHeaderColumn>
-                    {/* <TableHeaderColumn width='150' dataField='work_cost_km'>Work Cost (km)</TableHeaderColumn> */}
-                    <TableHeaderColumn width='150' dataField='work_year'>Work Year</TableHeaderColumn>
-                    <TableHeaderColumn width='150' dataField='npv'>NPV</TableHeaderColumn>
-                    {/* <TableHeaderColumn width='150' dataField='npv_km'>NPV (km)</TableHeaderColumn>
-                    <TableHeaderColumn width='150' dataField='npv_cost'>NPV (cost)</TableHeaderColumn> */}
-                    <TableHeaderColumn width='150' dataField='eirr'>EIRR</TableHeaderColumn>
-                    {/* <TableHeaderColumn width='150' dataField='y1_traffic'>Traffic </TableHeaderColumn>
-                    <TableHeaderColumn width='150' dataField='y1_truck_percent'>Truck Percent</TableHeaderColumn>
-                    <TableHeaderColumn width='150' dataField='y1_veh_util'>Vehicle Util</TableHeaderColumn>
-                    <TableHeaderColumn width='150' dataField='y1_esa'>ESA</TableHeaderColumn>
-                    <TableHeaderColumn width='150' dataField='lanes'>Lanes</TableHeaderColumn>
-                    <TableHeaderColumn width='150' dataField='width'>Width</TableHeaderColumn>
-                    <TableHeaderColumn width='150' dataField='road_type'>Road Type</TableHeaderColumn>
-                    <TableHeaderColumn width='150' dataField='surface_type'>Surface Type</TableHeaderColumn>
-                    <TableHeaderColumn width='150' dataField='condition_class'>Condition Class</TableHeaderColumn>
-                    <TableHeaderColumn width='150' dataField='roughness'>Roughness</TableHeaderColumn>
-                    <TableHeaderColumn width='150' dataField='structural_no'>Structural Number</TableHeaderColumn>
-                    <TableHeaderColumn width='150' dataField='pavement_age'>Pavement Age</TableHeaderColumn>
-                    <TableHeaderColumn width='150' dataField='traffic_level'>Traffic Level</TableHeaderColumn>
-                    <TableHeaderColumn width='150' dataField='aadt_motorcycle'>Motorcycle</TableHeaderColumn>
-                    <TableHeaderColumn width='150' dataField='aadt_carsmall'>Small Car </TableHeaderColumn>
-                    <TableHeaderColumn width='150' dataField='aadt_carmedium'>Medium Car</TableHeaderColumn>
-                    <TableHeaderColumn width='150' dataField='aadt_delivery'>Delivery</TableHeaderColumn>
-                    <TableHeaderColumn width='150' dataField='aadt_4wheel'>Four wheel</TableHeaderColumn>
-                    <TableHeaderColumn width='150' dataField='aadt_smalltruck'>Small Truck</TableHeaderColumn>
-                    <TableHeaderColumn width='150' dataField='aadt_mediumtruck'>Medium Truck</TableHeaderColumn>
-                    <TableHeaderColumn width='150' dataField='aadt_largetruck'>Large Truck</TableHeaderColumn>
-                    <TableHeaderColumn width='150' dataField='aadt_articulatedtruck'>Articulated Truck</TableHeaderColumn>
-                    <TableHeaderColumn width='150' dataField='aadt_smallbus'>Small Bus</TableHeaderColumn>
-                    <TableHeaderColumn width='150' dataField='aadt_mediumbus'>Medium Bus</TableHeaderColumn>
-                    <TableHeaderColumn width='150' dataField='aadt_motorcycle'>Motorcycle</TableHeaderColumn>
-                    <TableHeaderColumn width='150' dataField='aadt_carsmall'>Small Car </TableHeaderColumn>
-                    <TableHeaderColumn width='150' dataField='aadt_carmedium'>Medium Car</TableHeaderColumn>
-                    <TableHeaderColumn width='150' dataField='aadt_largebus'>Large Bus</TableHeaderColumn>
-                    <TableHeaderColumn width='150' dataField='aadt_total'>Total</TableHeaderColumn> */}
+                <BootstrapTable data={ this.state.data } height = '751' >
+                    <TableHeaderColumn dataField='road_section_id' isKey>Road Section Id</TableHeaderColumn>
+                    <TableHeaderColumn dataField='road_number'>Road Number</TableHeaderColumn>
+                    <TableHeaderColumn dataField='road_name'>Road Name</TableHeaderColumn>
+                    {/* <TableHeaderColumn dataField='road_start'>Road Start</TableHeaderColumn>
+                    <TableHeaderColumn dataField='road_end'>Road End</TableHeaderColumn>
+                    <TableHeaderColumn dataField='section_order'>Section Order</TableHeaderColumn>
+                    <TableHeaderColumn dataField='section_name'>Section Name</TableHeaderColumn>
+                    <TableHeaderColumn dataField='province'>Province</TableHeaderColumn> */}
+                    <TableHeaderColumn dataField='district'>District</TableHeaderColumn>
+                    {/* <TableHeaderColumn dataField='commune'>Commune</TableHeaderColumn>
+                    <TableHeaderColumn dataField='management'>Management</TableHeaderColumn>
+                    <TableHeaderColumn dataField='start_km'>start (km)</TableHeaderColumn>
+                    <TableHeaderColumn dataField='end_km'>end (km)</TableHeaderColumn> */}
+                    <TableHeaderColumn dataField='length'>Length</TableHeaderColumn>
+                    {/* <TableHeaderColumn dataField='terrain_type'>Terrain Type</TableHeaderColumn>
+                    <TableHeaderColumn dataField='temparature'>Temparature</TableHeaderColumn>
+                    <TableHeaderColumn dataField='moisture'>Moisture </TableHeaderColumn>
+                    <TableHeaderColumn dataField='traffic_growth'>Traffic Growth</TableHeaderColumn> */}
+                    <TableHeaderColumn dataField='work_class'>Work Class</TableHeaderColumn>
+                    <TableHeaderColumn dataField='work_type'>Work Type</TableHeaderColumn>
+                    {/* <TableHeaderColumn dataField='work_name'>Work Name</TableHeaderColumn> */}
+                    <TableHeaderColumn dataField='work_cost'>Work Cost</TableHeaderColumn>
+                    {/* <TableHeaderColumn dataField='work_cost_km'>Work Cost (km)</TableHeaderColumn> */}
+                    <TableHeaderColumn dataField='work_year'>Work Year</TableHeaderColumn>
+                    <TableHeaderColumn dataField='npv'>NPV</TableHeaderColumn>
+                    {/* <TableHeaderColumn dataField='npv_km'>NPV (km)</TableHeaderColumn>
+                    <TableHeaderColumn dataField='npv_cost'>NPV (cost)</TableHeaderColumn> */}
+                    <TableHeaderColumn dataField='eirr'>EIRR</TableHeaderColumn>
+                    {/* <TableHeaderColumn dataField='y1_traffic'>Traffic </TableHeaderColumn>
+                    <TableHeaderColumn dataField='y1_truck_percent'>Truck Percent</TableHeaderColumn>
+                    <TableHeaderColumn dataField='y1_veh_util'>Vehicle Util</TableHeaderColumn>
+                    <TableHeaderColumn dataField='y1_esa'>ESA</TableHeaderColumn>
+                    <TableHeaderColumn dataField='lanes'>Lanes</TableHeaderColumn>
+                    <TableHeaderColumn dataField='width'>Width</TableHeaderColumn>
+                    <TableHeaderColumn dataField='road_type'>Road Type</TableHeaderColumn>
+                    <TableHeaderColumn dataField='surface_type'>Surface Type</TableHeaderColumn>
+                    <TableHeaderColumn dataField='condition_class'>Condition Class</TableHeaderColumn>
+                    <TableHeaderColumn dataField='roughness'>Roughness</TableHeaderColumn>
+                    <TableHeaderColumn dataField='structural_no'>Structural Number</TableHeaderColumn>
+                    <TableHeaderColumn dataField='pavement_age'>Pavement Age</TableHeaderColumn>
+                    <TableHeaderColumn dataField='traffic_level'>Traffic Level</TableHeaderColumn>
+                    <TableHeaderColumn dataField='aadt_motorcycle'>Motorcycle</TableHeaderColumn>
+                    <TableHeaderColumn dataField='aadt_carsmall'>Small Car </TableHeaderColumn>
+                    <TableHeaderColumn dataField='aadt_carmedium'>Medium Car</TableHeaderColumn>
+                    <TableHeaderColumn dataField='aadt_delivery'>Delivery</TableHeaderColumn>
+                    <TableHeaderColumn dataField='aadt_4wheel'>Four wheel</TableHeaderColumn>
+                    <TableHeaderColumn dataField='aadt_smalltruck'>Small Truck</TableHeaderColumn>
+                    <TableHeaderColumn dataField='aadt_mediumtruck'>Medium Truck</TableHeaderColumn>
+                    <TableHeaderColumn dataField='aadt_largetruck'>Large Truck</TableHeaderColumn>
+                    <TableHeaderColumn dataField='aadt_articulatedtruck'>Articulated Truck</TableHeaderColumn>
+                    <TableHeaderColumn dataField='aadt_smallbus'>Small Bus</TableHeaderColumn>
+                    <TableHeaderColumn dataField='aadt_mediumbus'>Medium Bus</TableHeaderColumn>
+                    <TableHeaderColumn dataField='aadt_motorcycle'>Motorcycle</TableHeaderColumn>
+                    <TableHeaderColumn dataField='aadt_carsmall'>Small Car </TableHeaderColumn>
+                    <TableHeaderColumn dataField='aadt_carmedium'>Medium Car</TableHeaderColumn>
+                    <TableHeaderColumn dataField='aadt_largebus'>Large Bus</TableHeaderColumn>
+                    <TableHeaderColumn dataField='aadt_total'>Total</TableHeaderColumn> */}
                 </BootstrapTable>
                 </div>
             </div>

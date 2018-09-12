@@ -30,6 +30,7 @@ thead {
     // color: #848484;
     // font-weight: 300;
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 .react-bs-container-header {
     width: 100%;
@@ -42,6 +43,10 @@ thead {
 .react-bs-table table {
     margin-bottom: 0;
     table-layout: fixed;
+}
+.react-bs-container-body {
+    overflow: auto;
+    width: 100%;
 }
 .content {
     display: flex;
