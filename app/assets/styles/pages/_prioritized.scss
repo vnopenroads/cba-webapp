@@ -107,8 +107,10 @@
 .table-pzi {
     margin-left: 20px;
     margin-right: 20px;
+    height: 750px;
+    overflow: auto;
 }
-.react-bs-table {
-    height: 650px !important;
-    overflow-x: scroll !important 
-} 
+// .react-bs-table {
+//     height: 650px !important;
+//     overflow-x: scroll !important 
+// } 

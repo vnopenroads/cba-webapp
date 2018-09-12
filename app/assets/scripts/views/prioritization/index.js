@@ -44,32 +44,32 @@ export default class Prioritization extends React.Component {
                     <TableHeaderColumn width='150' dataField='road_section_id' isKey>Road Section Id</TableHeaderColumn>
                     <TableHeaderColumn width='150' dataField='road_number'>Road Number</TableHeaderColumn>
                     <TableHeaderColumn width='150' dataField='road_name'>Road Name</TableHeaderColumn>
-                    <TableHeaderColumn width='150' dataField='road_start'>Road Start</TableHeaderColumn>
+                    {/* <TableHeaderColumn width='150' dataField='road_start'>Road Start</TableHeaderColumn>
                     <TableHeaderColumn width='150' dataField='road_end'>Road End</TableHeaderColumn>
                     <TableHeaderColumn width='150' dataField='section_order'>Section Order</TableHeaderColumn>
                     <TableHeaderColumn width='150' dataField='section_name'>Section Name</TableHeaderColumn>
-                    <TableHeaderColumn width='150' dataField='province'>Province</TableHeaderColumn>
+                    <TableHeaderColumn width='150' dataField='province'>Province</TableHeaderColumn> */}
                     <TableHeaderColumn width='150' dataField='district'>District</TableHeaderColumn>
-                    <TableHeaderColumn width='150' dataField='commune'>Commune</TableHeaderColumn>
+                    {/* <TableHeaderColumn width='150' dataField='commune'>Commune</TableHeaderColumn>
                     <TableHeaderColumn width='150' dataField='management'>Management</TableHeaderColumn>
                     <TableHeaderColumn width='150' dataField='start_km'>start (km)</TableHeaderColumn>
-                    <TableHeaderColumn width='150' dataField='end_km'>end (km)</TableHeaderColumn>
+                    <TableHeaderColumn width='150' dataField='end_km'>end (km)</TableHeaderColumn> */}
                     <TableHeaderColumn width='150' dataField='length'>Length</TableHeaderColumn>
-                    <TableHeaderColumn width='150' dataField='terrain_type'>Terrain Type</TableHeaderColumn>
+                    {/* <TableHeaderColumn width='150' dataField='terrain_type'>Terrain Type</TableHeaderColumn>
                     <TableHeaderColumn width='150' dataField='temparature'>Temparature</TableHeaderColumn>
                     <TableHeaderColumn width='150' dataField='moisture'>Moisture </TableHeaderColumn>
-                    <TableHeaderColumn width='150' dataField='traffic_growth'>Traffic Growth</TableHeaderColumn>
+                    <TableHeaderColumn width='150' dataField='traffic_growth'>Traffic Growth</TableHeaderColumn> */}
                     <TableHeaderColumn width='150' dataField='work_class'>Work Class</TableHeaderColumn>
                     <TableHeaderColumn width='150' dataField='work_type'>Work Type</TableHeaderColumn>
-                    <TableHeaderColumn width='150' dataField='work_name'>Work Name</TableHeaderColumn>
+                    {/* <TableHeaderColumn width='150' dataField='work_name'>Work Name</TableHeaderColumn> */}
                     <TableHeaderColumn width='150' dataField='work_cost'>Work Cost</TableHeaderColumn>
-                    <TableHeaderColumn width='150' dataField='work_cost_km'>Work Cost (km)</TableHeaderColumn>
+                    {/* <TableHeaderColumn width='150' dataField='work_cost_km'>Work Cost (km)</TableHeaderColumn> */}
                     <TableHeaderColumn width='150' dataField='work_year'>Work Year</TableHeaderColumn>
                     <TableHeaderColumn width='150' dataField='npv'>NPV</TableHeaderColumn>
-                    <TableHeaderColumn width='150' dataField='npv_km'>NPV (km)</TableHeaderColumn>
-                    <TableHeaderColumn width='150' dataField='npv_cost'>NPV (cost)</TableHeaderColumn>
+                    {/* <TableHeaderColumn width='150' dataField='npv_km'>NPV (km)</TableHeaderColumn>
+                    <TableHeaderColumn width='150' dataField='npv_cost'>NPV (cost)</TableHeaderColumn> */}
                     <TableHeaderColumn width='150' dataField='eirr'>EIRR</TableHeaderColumn>
-                    <TableHeaderColumn width='150' dataField='y1_traffic'>Traffic </TableHeaderColumn>
+                    {/* <TableHeaderColumn width='150' dataField='y1_traffic'>Traffic </TableHeaderColumn>
                     <TableHeaderColumn width='150' dataField='y1_truck_percent'>Truck Percent</TableHeaderColumn>
                     <TableHeaderColumn width='150' dataField='y1_veh_util'>Vehicle Util</TableHeaderColumn>
                     <TableHeaderColumn width='150' dataField='y1_esa'>ESA</TableHeaderColumn>
@@ -97,7 +97,7 @@ export default class Prioritization extends React.Component {
                     <TableHeaderColumn width='150' dataField='aadt_carsmall'>Small Car </TableHeaderColumn>
                     <TableHeaderColumn width='150' dataField='aadt_carmedium'>Medium Car</TableHeaderColumn>
                     <TableHeaderColumn width='150' dataField='aadt_largebus'>Large Bus</TableHeaderColumn>
-                    <TableHeaderColumn width='150' dataField='aadt_total'>Total</TableHeaderColumn>
+                    <TableHeaderColumn width='150' dataField='aadt_total'>Total</TableHeaderColumn> */}
                 </BootstrapTable>
                 </div>
             </div>
