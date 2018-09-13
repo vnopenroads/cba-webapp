@@ -4,8 +4,12 @@ import dataConfigurations from '../../dataConfigurations';
 import VehicleFleet from './table/vehicle-fleet';
 import Annual from './table/annual';
 import RoadWords from './table/road-work';
-import Maintenance from './table/recurrent-maintenance'
-export default class A extends React.Component {
+import Maintenance from './table/recurrent-maintenance';
+import Operating from './table/operating';
+import Speed from './table/vehicle-speed';
+import Deterioration from './table/road-deterioration';
+import Evaluated from './table/work-evaluated';
+export default class Configurations extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -18,8 +22,6 @@ export default class A extends React.Component {
     }
     render() {
         let {title} = this.state
-        console.log(dataConfigurations)
-    
         return (
             <div className = 'content-con'>
             <div className = 'content-con-left'>
@@ -51,7 +53,7 @@ export default class A extends React.Component {
             <div className = {this.isActive('operating')} onClick = {() => {this.setState({title: 'operating'})}}>
                 Vehicle Operating Costs (VOC)
             </div>
-            <div >
+            <div className = {this.isActive('speed')} onClick = {() => {this.setState({title: 'speed'})}}>
                 Vehicle Speeds
             </div>
             </div>
@@ -68,10 +70,10 @@ export default class A extends React.Component {
             <div className = {this.isActive('maintenance')} onClick = {() => {this.setState({title: 'maintenance'})}}>
                 Recurrent Maintenance
             </div>
-            <div>
-                Road Deteriotation
+            <div className = {this.isActive('deterioration')} onClick = {() => {this.setState({title: 'deterioration'})}}>
+                Road Deterioration
             </div>
-            <div>
+            <div className = {this.isActive('evaluated')} onClick = {() => {this.setState({title: 'evaluated'})}}>
                 Road Work to be Evaluated
             </div>
             </div>
@@ -103,16 +105,25 @@ export default class A extends React.Component {
             {(title === 'vehicle-fleet') ?  <VehicleFleet 
             datas = {dataConfigurations["vehicle-fleet"]}
             /> : <div/> }
-             {(title === 'annual') ?  <Annual 
+            {(title === 'annual') ?  <Annual 
             datas = {dataConfigurations["vehicle-fleet"]}
             /> : <div/> }
-             {(title === 'operating') ?  <Annual 
+            {(title === 'operating') ?  <Operating 
+            datas = {dataConfigurations["vehicle-fleet"]}
+            /> : <div/> }
+            {(title === 'speed') ?  <Speed 
             datas = {dataConfigurations["vehicle-fleet"]}
             /> : <div/> }
             {(title === 'RW-CHA') ?  <div> <RoadWords 
             datas = {dataConfigurations['RW-CHA']}
             /> </div> : <div/> }
             {(title === 'maintenance') ?  <div> <Maintenance 
+            datas = {dataConfigurations['RW-CHA']}
+            /> </div> : <div/> }
+            {(title === 'deterioration') ?  <div> <Deterioration 
+            datas = {dataConfigurations['RW-CHA']}
+            /> </div> : <div/> }
+            {(title === 'evaluated') ?  <div> <Evaluated 
             datas = {dataConfigurations['RW-CHA']}
             /> </div> : <div/> }
             </div>

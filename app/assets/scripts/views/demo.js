@@ -49,7 +49,7 @@ export default class ClickToEditTable extends React.Component {
       <div className = 'header'>
       <div className = 'left-header'>
       <div className = 'last_synced'> Last synced with ORMA: 24 Aug 2018 20:48(GMT+7)</div>
-      <div className = 'total_assets'> Total assets: 1200 - Valid: 1106 / Invalid: 94 (7,83%) </div> 
+      <div className = 'total_assets'> Total assets: 1200 - Valid: 1106 </div> 
       </div>
       <div className = 'sync_data'> 
       <img className = 'sync_icon' src='assets/graphics/layout/sync.svg' alt='Sync icon' />

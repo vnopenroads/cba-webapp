@@ -10,7 +10,8 @@ export default class Prioritization extends React.Component {
         this.state = {
             data : dataPrioritization,
             selected: [],
-            name: 'Scenario 1: $776.9 (100%)'
+            name: 'Scenario 1: $776.9 (100%)',
+            toggle: false,
         }
     }
     render() {
@@ -29,15 +30,20 @@ export default class Prioritization extends React.Component {
                     <div className="dropdown">
                     <button className="dropbtn">{this.state.name}</button>
                     <div className="dropdown-content">
-                    <div className = 'dropdown-contenta' onClick = {()=> {this.setState({selected: dataPrioritization,name: 'Scenario 1: $776.9 (100%)'})}}>Scenario 1: $776.9 (100%)</div>
-                    <div className = 'dropdown-contenta' onClick = {()=> {this.setState({selected: data2, name:'Scenario 2: $621.6 (80%)' })}}>Scenario 2: $621.6 (80%)</div>
-                    <div className = 'dropdown-contenta' onClick = {()=> {this.setState({selected: data3, name: 'Scenario 3: $466.2 (60%)'})}}>Scenario 3: $466.2 (60%)</div>
+                    <div className = 'dropdown-contenta' onClick = {()=> {this.setState({selected: dataPrioritization,name: 'Scenario 1: $776.9 (100%)', toggle: true})}}>Scenario 1: $776.9 (100%)</div>
+                    <div className = 'dropdown-contenta' onClick = {()=> {this.setState({selected: data2, name:'Scenario 2: $621.6 (80%)', toggle: true })}}>Scenario 2: $621.6 (80%)</div>
+                    <div className = 'dropdown-contenta' onClick = {()=> {this.setState({selected: data3, name: 'Scenario 3: $466.2 (60%)', toggle: true})}}>Scenario 3: $466.2 (60%)</div>
                     </div>
                     </div>
                     
-                    <div className = 'sync_data_pzi'> 
-                    <span onClick = {()=> {this.setState({data: this.state.selected})}} >Get Optimized Program</span> 
-                    </div>
+                    <button className = {(this.state.toggle) ? 'sync_data_pzi_action' : 'sync_data_pzi'}> 
+                    <span onClick = {()=> {
+                        setTimeout(() => {
+                            this.setState({data: this.state.selected, toggle: false})
+                          
+                        }, 2000)
+                    }} >Get Optimized Program</span> 
+                    </button>
                 </div>
                 <div className = 'table-pzi'>
                 <BootstrapTable data={ this.state.data } height = '751' >
