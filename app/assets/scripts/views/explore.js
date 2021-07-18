@@ -1,24 +1,13 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import {
-  compose,
-  withProps,
-  getContext
-} from 'recompose';
+import {compose, withProps, getContext} from 'recompose';
 import mapboxgl from 'mapbox-gl';
 import T from '../components/t';
 import config from '../config';
 import lineColors from '../utils/line-colors';
-import {
-  selectExploreMapLayer,
-  exploreMapShowNoVpromms
-} from '../actions/action-creators';
-import {
-  setMapPosition
-} from '../redux/modules/map';
-import {
-  fetchRoadBboxEpic
-} from '../redux/modules/roads';
+import {selectExploreMapLayer, exploreMapShowNoVpromms} from '../actions/action-creators';
+import {setMapPosition} from '../redux/modules/map';
+import {fetchRoadBboxEpic} from '../redux/modules/roads';
 import MapSearch from '../components/map-search';
 import MapOptions from '../components/map-options';
 import MapLegend from '../components/map-legend';
@@ -44,6 +33,7 @@ var Explore = React.createClass({
     mapboxgl.accessToken = config.mbToken;
 
     const { lng, lat, zoom, activeRoad } = this.props;
+
 
     if (activeRoad) {
       this.props.fetchActiveRoad(activeRoad);

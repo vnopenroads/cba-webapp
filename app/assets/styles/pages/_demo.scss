@@ -1,3 +1,6 @@
+.map-container {
+    height: 100%;
+}
 
 table {
     table-layout: fixed;
@@ -52,7 +55,6 @@ thead {
     display: flex;
     margin: 40px 17px 17px 17px;
     margin-right: 20px;
-   
 }
 
 .content-left {
@@ -86,7 +88,6 @@ thead {
 .inner {
     display: flex;
     justify-content: space-between;
-
 }
 
 .inner-left {
